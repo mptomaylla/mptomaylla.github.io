@@ -1,174 +1,291 @@
-/*
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+/**
+* Template Name: Personal
+* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+* Updated: Mar 17 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
 */
 
-(function($) {
+(function () {
+  "use strict";
 
-	var	$window = $(window),
-		$body = $('body'),
-		$html = $('html');
+  /**
+   * Easy selector helper function
+   */
+  const select = (el, all = false) => {
+    el = el.trim()
+    if (all) {
+      return [...document.querySelectorAll(el)]
+    } else {
+      return document.querySelector(el)
+    }
+  }
 
-	// Breakpoints.
-		breakpoints({
-			large:   [ '981px',  '1680px' ],
-			medium:  [ '737px',  '980px'  ],
-			small:   [ '481px',  '736px'  ],
-			xsmall:  [ null,     '480px'  ]
-		});
+  /**
+   * Easy event listener function
+   */
+  const on = (type, el, listener, all = false) => {
+    let selectEl = select(el, all)
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+    if (selectEl) {
+      if (all) {
+        selectEl.forEach(e => e.addEventListener(type, listener))
+      } else {
+        selectEl.addEventListener(type, listener)
+      }
+    }
+  }
 
-	// Touch mode.
-		if (browser.mobile) {
+  /**
+   * Scrolls to an element with header offset
+   */
+  const scrollto = (el) => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
 
-			var $wrapper;
+  /**
+   * Mobile nav toggle
+   */
+  on('click', '.mobile-nav-toggle', function (e) {
+    select('#navbar').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+  })
 
-			// Create wrapper.
-				$body.wrapInner('<div id="wrapper" />');
-				$wrapper = $('#wrapper');
+  /**
+   * Scrool with ofset on links with a class name .scrollto
+   */
+  on('click', '#navbar .nav-link', function (e) {
+    let section = select(this.hash)
+    if (section) {
+      e.preventDefault()
 
-				// Hack: iOS vh bug.
-					if (browser.os == 'ios')
-						$wrapper
-							.css('margin-top', -25)
-							.css('padding-bottom', 25);
+      let navbar = select('#navbar')
+      let header = select('#header')
+      let sections = select('section', true)
+      let navlinks = select('#navbar .nav-link', true)
 
-				// Pass scroll event to window.
-					$wrapper.on('scroll', function() {
-						$window.trigger('scroll');
-					});
+      navlinks.forEach((item) => {
+        item.classList.remove('active')
+      })
 
-			// Scrolly.
-				$window.on('load.hl_scrolly', function() {
+      this.classList.add('active')
 
-					$('.scrolly').scrolly({
-						speed: 1500,
-						parent: $wrapper,
-						pollOnce: true
-					});
+      if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile')
+        let navbarToggle = select('.mobile-nav-toggle')
+        navbarToggle.classList.toggle('bi-list')
+        navbarToggle.classList.toggle('bi-x')
+      }
 
-					$window.off('load.hl_scrolly');
+      if (this.hash == '#header') {
+        header.classList.remove('header-top')
+        sections.forEach((item) => {
+          item.classList.remove('section-show')
+        })
+        return;
+      }
 
-				});
+      if (!header.classList.contains('header-top')) {
+        header.classList.add('header-top')
+        setTimeout(function () {
+          sections.forEach((item) => {
+            item.classList.remove('section-show')
+          })
+          section.classList.add('section-show')
 
-			// Enable touch mode.
-				$html.addClass('is-touch');
+        }, 350);
+      } else {
+        sections.forEach((item) => {
+          item.classList.remove('section-show')
+        })
+        section.classList.add('section-show')
+      }
 
-		}
-		else {
+      scrollto(this.hash)
+    }
+  }, true)
 
-			// Scrolly.
-				$('.scrolly').scrolly({
-					speed: 1500
-				});
+  /**
+   * Activate/show sections on load with hash links
+   */
+  window.addEventListener('load', () => {
+    if (window.location.hash) {
+      let initial_nav = select(window.location.hash)
 
-		}
+      if (initial_nav) {
+        let header = select('#header')
+        let navlinks = select('#navbar .nav-link', true)
 
-	// Header.
-		var $header = $('#header'),
-			$headerTitle = $header.find('header'),
-			$headerContainer = $header.find('.container');
+        header.classList.add('header-top')
 
-		// Make title fixed.
-			if (!browser.mobile) {
+        navlinks.forEach((item) => {
+          if (item.getAttribute('href') == window.location.hash) {
+            item.classList.add('active')
+          } else {
+            item.classList.remove('active')
+          }
+        })
 
-				$window.on('load.hl_headerTitle', function() {
+        setTimeout(function () {
+          initial_nav.classList.add('section-show')
+        }, 350);
 
-					breakpoints.on('>medium', function() {
+        scrollto(window.location.hash)
+      }
+    }
+  });
 
-						$headerTitle
-							.css('position', 'fixed')
-							.css('height', 'auto')
-							.css('top', '50%')
-							.css('left', '0')
-							.css('width', '100%')
-							.css('margin-top', ($headerTitle.outerHeight() / -2));
+  /**
+   * Skills animation
+   */
+  let skilsContent = select('.skills-content');
+  if (skilsContent) {
+    new Waypoint({
+      element: skilsContent,
+      offset: '80%',
+      handler: function (direction) {
+        let progress = select('.progress .progress-bar', true);
+        progress.forEach((el) => {
+          el.style.width = el.getAttribute('aria-valuenow') + '%'
+        });
+      }
+    })
+  }
 
-					});
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
 
-					breakpoints.on('<=medium', function() {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
 
-						$headerTitle
-							.css('position', '')
-							.css('height', '')
-							.css('top', '')
-							.css('left', '')
-							.css('width', '')
-							.css('margin-top', '');
+  /**
+   * Porfolio isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let portfolioContainer = select('.portfolio-container');
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+      });
 
-					});
+      let portfolioFilters = select('#portfolio-flters li', true);
 
-					$window.off('load.hl_headerTitle');
+      on('click', '#portfolio-flters li', function (e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function (el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
 
-				});
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+      }, true);
+    }
 
-			}
+  });
 
-		// Scrollex.
-			breakpoints.on('>small', function() {
-				$header.scrollex({
-					terminate: function() {
+  /**
+   * Initiate portfolio lightbox 
+   */
+  const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+  });
 
-						$headerTitle.css('opacity', '');
+  /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    width: '90%',
+    height: '90vh'
+  });
 
-					},
-					scroll: function(progress) {
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
 
-						// Fade out title as user scrolls down.
-							if (progress > 0.5)
-								x = 1 - progress;
-							else
-								x = progress;
+  /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();
 
-							$headerTitle.css('opacity', Math.max(0, Math.min(1, x * 2)));
+})()
 
-					}
-				});
-			});
 
-			breakpoints.on('<=small', function() {
+// type effect
 
-				$header.unscrollex();
 
-			});
+var words = ['Rubik\'s cube collector', 'people call me MP', 'Product Owner', 'Project Manager', 'Engineer', 'Developer', 'Artist', 'Photographer', 'Make-up Artist'],
+  wordWrapper = document.getElementById('word'),
+  wordWrapperContent = wordWrapper.innerHTML,
+  addingWord = false,
+  counter = 1;
 
-	// Main sections.
-		$('.main').each(function() {
+setInterval(function () {
 
-			var $this = $(this),
-				$primaryImg = $this.find('.image.primary > img'),
-				$bg,
-				options;
+  if (wordWrapperContent.length > 0 && !addingWord) {
+    wordWrapper.innerHTML = wordWrapperContent.slice(0, -1);
+    wordWrapperContent = wordWrapper.innerHTML;
+  } else {
+    addingWord = true;
+  }
 
-			// No primary image? Bail.
-				if ($primaryImg.length == 0)
-					return;
+  if (addingWord) {
+    if (wordWrapperContent.length < words[counter].length) {
+      wordWrapper.innerHTML = words[counter].slice(0, wordWrapperContent.length + 1);
+      wordWrapperContent = wordWrapper.innerHTML;
+    } else {
+      if (counter < words.length) {
+        counter++
+      }
+      addingWord = false;
+    }
+  }
 
-			// Create bg and append it to body.
-				$bg = $('<div class="main-bg" id="' + $this.attr('id') + '-bg"></div>')
-					.css('background-image', (
-						'url("assets/css/images/overlay.png"), url("' + $primaryImg.attr('src') + '")'
-					))
-					.appendTo($body);
+  if (counter == words.length) {
+    counter = 0;
+  }
 
-			// Scrollex.
-				$this.scrollex({
-					mode: 'middle',
-					delay: 200,
-					top: '-10vh',
-					bottom: '-10vh',
-					init: function() { $bg.removeClass('active'); },
-					enter: function() { $bg.addClass('active'); },
-					leave: function() { $bg.removeClass('active'); }
-				});
-
-		});
-
-})(jQuery);
+}, 150);

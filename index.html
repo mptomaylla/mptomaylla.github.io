@@ -1,453 +1,787 @@
-<!DOCTYPE HTML>
-<!--
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Highlights by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<section id="header">
-				<header class="major">
-					<h1>Soy MP</h1>
-					<p>A fun little { responsive } single pager by <a href="http://html5up.net">HTML5 UP</a></p>
-				</header>
-				<div class="container">
-					<ul class="actions special">
-						<li><a href="#one" class="button primary scrolly">Begin</a></li>
-					</ul>
-				</div>
-			</section>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-		<!-- One -->
-			<section id="one" class="main special">
-				<div class="container">
-					<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>Who I am</h2>
-						</header>
-						<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
+  <title>Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-		<!-- Two -->
-			<section id="two" class="main special">
-				<div class="container">
-					<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>Stuff I do</h2>
-						</header>
-						<p>Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate.</p>
-						<ul class="icons-grid">
-							<li>
-								<span class="icon solid major fa-camera-retro"></span>
-								<h3>Magna Etiam</h3>
-							</li>
-							<li>
-								<span class="icon solid major fa-pencil-alt"></span>
-								<h3>Lorem Ipsum</h3>
-							</li>
-							<li>
-								<span class="icon solid major fa-code"></span>
-								<h3>Nulla Tempus</h3>
-							</li>
-							<li>
-								<span class="icon solid major fa-coffee"></span>
-								<h3>Sed Feugiat</h3>
-							</li>
-						</ul>
-					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-		<!-- Three -->
-			<section id="three" class="main special">
-				<div class="container">
-					<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
-						<header class="major">
-							<h2>One more thing</h2>
-						</header>
-						<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-					</div>
-					<a href="#footer" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-		<!-- Four -->
-		<!--
-			<section id="four" class="main">
-				<div class="container">
-					<div class="content">
-						<header class="major">
-							<h2>Elements</h2>
-						</header>
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+  <!-- =======================================================
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-medium">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+<body>
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+      <p class="intro">I am</p>
+      <h1><a href="index.html">María Paula</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <p><span class="word" id="word"></span></span>
+      </p>
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="spanish.html"><img src="assets/img/flag.png"/></a></li>
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Disabled</span></li>
-								<li><span class="button disabled">Disabled</span></li>
-							</ul>
-						</section>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">Not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/mptomaylla/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/mp.tomaylla/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/mptomaylla/" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.twitch.tv/justcallmedandelion" class="twitch"><i class="bi bi-twitch"></i></a>
+      </div>
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+    </div>
+  </header><!-- End Header -->
 
-					</div>
-					<a href="#footer" class="goto-next scrolly">Next</a>
-				</div>
-			</section>
-		-->
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
 
-		<!-- Footer -->
-			<section id="footer">
-				<div class="container">
-					<header class="major">
-						<h2>Get in touch</h2>
-					</header>
-					<form method="post" action="#">
-						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-							<div class="col-12">
-								<ul class="actions special">
-									<li><input type="submit" value="Send Message" class="primary" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-				<footer>
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Demo Images: <a href="http://unsplash.com">Unsplash</a></li>
-					</ul>
-				</footer>
-			</section>
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
 
-	</body>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/me.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Product Owner</h3>
+          <p/>
+          <p style="text-align: justify; font-size: 20px;">
+            Computer Engineer with over 16 years of experience in the financial sector, implementing and leading digital
+            projects within the industry. I hold a Master's degree in Project Management and Innovation & Customer
+            Experience. My dedication, creativity, adaptability, and proactive approach drive me to solve problems and
+            achieve objectives aligned with business strategy. I possess a strong ability to work effectively in team
+            settings and specialize in agile environments.
+          </p>
+          <p/>
+          <p style="text-align: justify; font-size: 20px;">
+            In addition to my technical expertise, I am passionate about art, which enhances my career as an engineer by
+            fostering creativity and innovative thinking. I am also deeply committed to sustainable development,
+            integrating these principles into my professional projects to create environmentally responsible and
+            forward-thinking solutions.
+          </p>
+        </div>
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Counts ======= -->
+    <div class="counts container">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-emoji-smile"></i>
+            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bi bi-journal-richtext"></i>
+            <span data-purecounter-start="0" data-purecounter-end="59" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-headset"></i>
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-award"></i>
+            <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Awards</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- End Counts -->
+
+     <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>INTERESTS</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-building-2-fill" style="color: #ffbb2c;"></i>
+            <h3>Project Management</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-brain-fill" style="color: #5578ff;"></i>
+            <h3>Agile methodologies</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-speak-line" style="color: #e80368;"></i>
+            <h3>CX & UX</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-plant-fill" style="color: #e361ff;"></i>
+            <h3>Sustainable Development</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-capsule-fill" style="color: #47aeff;"></i>
+            <h3>Digital Transformation</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-lightbulb-line" style="color: #ffa76e;"></i>
+            <h3>Innovation</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-camera-2-line" style="color: #11dbcf;"></i>
+            <h3>Photography</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-brush-fill" style="color: #4233ff;"></i>
+            <h3>Arts</h3>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div><!-- End Interests -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Experience</h3>
+          <img src="assets/img/culqi.png"/>
+          <div class="resume-item">    
+            <h4>Product Owner</h4>
+            <h5>2023 - Present</h5>
+            <p>
+            <ul>
+              <li>Responsible for defining and communicating the strategic product vision, managing the backlog, and leading multidisciplinary teams to ensure the delivery of high-quality features.</li>
+              <li>Implemented agile practices that promote adaptability and continuous delivery in the development and implementation of Culqi's technological platform.</li>
+            </ul>
+            </p>
+          </div>
+          <img src="assets/img/bcp.png"/>
+          <div class="resume-item">
+            <h4>Product Owner</h4>
+            <h5>2021 - 2023</h5>
+            <p>
+            <ul>
+              <li>Led the Common Components squad of the Treasury Tribe, providing support, driving evolution, and governing the Calypso technological platform, an application used for managing Treasury operations; transforming it into a high-performing team.</li>
+              <li>Managed the squad's backlog based on the alignment with the Tribe's OKRs, guiding the team and removing impediments to achieve our objectives.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Agile Coach</h4>
+            <h5>2020 - 2021</h5>
+            <p>
+            <ul>
+              <li>Participated in the organizational redesign of BCP. This reorganization aimed at optimizing and improving process efficiency within the framework of business agility, which allowed me to gain a holistic view of banking operations.</li>
+              <li>Redesigned the organizational structure of the Analytical CRM, Treasury Risk, Market Risk, Treasury, and Risk Management divisions of BCP. They are now distributed into COEs (Centers of Excellence) and Tribes, which are generating early value deliveries aligned with the business strategy.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Agile Manager</h4>
+            <h5>2018 - 2020</h5>
+            <p>
+            <ul>
+              <li>Led the methodological transformation of the New Internet Banking Implementation project, transitioning from a waterfall model to a non-scaled agile model, and eventually to a scaled agile model with 11 teams and a total of 92 people, resulting in a 60% improvement in time to market.</li>
+              <li>Led the implementation of Dinero al Instante, an instant loan application, which generated 60% of digital sales for Retail Banking in its first year.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>IT Project Manager</h4>
+            <h5>2016 - 2018</h5>
+            <p>
+            <ul>
+              <li>Led projects using the waterfall methodology from exploration, planning, execution, to closure. Participated in the design of functionalities, implementing applications using technologies such as Java, .Net, Mainframe, and Cobol.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Software Architect</h4>
+            <h5>2013 - 2016</h5>
+            <p>
+            <ul>
+              <li>Developed and implemented a prioritization framework and methodology to address system standardization requirements, ensuring the fulfillment of commitments with the Superintendence of Banking and Insurance, the regulatory authority for banking in Peru.</li>
+              <li>Successfully managed 8 projects using the waterfall methodology, achieving project closure and receiving performance recognition, including the "BCP Shirt" awards in 2014, 2015, and 2016.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Technical Lead</h4>
+            <h5>2011 - 2013</h5>
+            <p>
+            <ul>
+              <li>Conducted business analysis and assessed the functional and technical feasibility of requirements for implementing new features on web platform channels.</li>
+              <li>Led the outsourcing of the Corporate Internet Banking portal, implementing a strategy that ensured a smooth transition period with the provider while maintaining support levels and business continuity.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Development Analyst</h4>
+            <h5>2008 - 2011</h5>
+            <p>
+            <ul>
+              <li>Participated in various virtual channels projects, performing technical analysis and overseeing the development carried out by programmers.</li>
+              <li>Developed a programming framework, which contributed to designing scalable solutions and reducing development time.</li>
+            </ul>
+            </p>
+          </div>
+          <img src="assets/img/bbva.png"/>
+          <div class="resume-item">
+            <h4>Development Analyst</h4>
+            <h5>2007 - 2008</h5>
+            <p>
+            <ul>
+              <li>Developed web applications for various projects within BBVA's intranet, focusing on improving user experience and functionality.</li>
+              <li>Defined programming standards for application development, contributing to streamlining source code maintenance.</li>
+            </ul>
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>Developer</h4>
+            <h5>2006 - 2007</h5>
+            <p>
+            <ul>
+              <li>Developed Cobol programs for projects across Peru, Mexico, and Chile, contributing to various banking operations such as transaction processing and account management.</li>
+              <li>Led the software factory, managing a team of 15 programmers, guiding and coordinating their efforts to ensure the timely delivery of high-quality software solutions.</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-6">
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Máster en Customer Experience & Innovation</h4>
+            <h5>2022 - 2023</h5>
+            <p><em>EAE Business School, Spain, Barcelona </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Treasury Management</h4>
+            <h5>2021 - 2021</h5>
+            <p><em>CENTRUM, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Digital illustration</h4>
+            <h5>2021 - 2021</h5>
+            <p><em>IPAD- Instituto Peruano de Arte y Diseño, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Illustrator</h4>
+            <h5>2021 - 2021</h5>
+            <p><em>IPAD- Instituto Peruano de Arte y Diseño, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Photoshop</h4>
+            <h5>2020 - 2020</h5>
+            <p><em>IPAD- Instituto Peruano de Arte y Diseño, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Art Direction</h4>
+            <h5>2019 - 2019</h5>
+            <p><em>IPAD- Instituto Peruano de Arte y Diseño, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Digital Photography Program</h4>
+            <h5>2019 - 2019</h5>
+            <p><em>IPAD- Instituto Peruano de Arte y Diseño, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>International Career in Image Consulting and Personal Shopping</h4>
+            <h5>2019 - 2019</h5>
+            <p><em>TSI - The Style Institute, Perú, Lima </em></p>
+          </div> 
+          <div class="resume-item">
+            <h4>Scaled Agile Framework</h4>
+            <h5>2019 - 2019</h5>
+            <p><em>SAFe, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Professional Make-up Artist Program</h4>
+            <h5>2018 - 2019</h5>
+            <p><em>All Skin by Solange, Perú, Lima </em></p>
+          </div> 
+          <div class="resume-item">
+            <h4>Design Thinking</h4>
+            <h5>2018 - 2018</h5>
+            <p><em>Pontificia Universidad Católica del Perú, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Visual Thinking</h4>
+            <h5>2018 - 2018</h5>
+            <p><em>Imperspectivas, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Kanban System Design</h4>
+            <h5>2018 - 2018</h5>
+            <p><em>Performance Development, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Agile Team Facilitator</h4>
+            <h5>2017 - 2017</h5>
+            <p><em>Kleer, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Scrum Master</h4>
+            <h5>2016 - 2016</h5>
+            <p><em>Chamonix, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Project Planning PMI-SP</h4>
+            <h5>2014 - 2014</h5>
+            <p><em>PMCertifica, Perú, Lima</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Project Management Master's Degree</h4>
+            <h5>2012 - 2014</h5>
+            <p><em>Universidad ESAN, Perú, Lima / Universitat Ramon Llull, Spain, Barcelona </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>ITIL Foundations</h4>
+            <h5>2013 - 2013</h5>
+            <p><em>NetComp, Perú, Lima</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>PMP Project Manager</h4>
+            <h5>2011 - 2012</h5>
+            <p><em>PMCertifica, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Management Financial Accounting</h4>
+            <h5>2011 - 2011</h5>
+            <p><em>ESAN, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Specialization in Information Technologies</h4>
+            <h5>2010 - 2011</h5>
+            <p><em>ESAN, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Service-Oriented Architecture (SOA)</h4>
+            <h5>2007 - 2007</h5>
+            <p><em>Ultranet, Perú, Lima </em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Software Engineering Bachelor's Degree</h4>
+            <h5>2001 - 2006</h5>
+            <p><em>Pontificia Universidad Católica del Perú, Perú, Lima </em></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>My Services</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">Lorem Ipsum</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-file"></i></div>
+            <h4><a href="">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-tachometer"></i></div>
+            <h4><a href="">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-world"></i></div>
+            <h4><a href="">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-slideshow"></i></div>
+            <h4><a href="">Dele cardo</a></h4>
+            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+          <div class="icon-box">
+            <div class="icon"><i class="bx bx-arch"></i></div>
+            <h4><a href="">Divera don</a></h4>
+            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>A108 Adam Street, New York, NY 535022</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>contact@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div>
+      </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
